@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(35, 36, 36);
+}
+.containerx{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.content{
+    width: 70%;
+    padding: 10px;
+    background-color: rgb(51, 51, 50);
+    border-radius: 6px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 15px;
+    background: linear-gradient(to right, #d0a368,#858585);
+    border-radius: 6px;
+}
+header a{
+    text-decoration: none;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+header .logo h3{
+    padding: 3px 0;
+    border-bottom: 2px dashed rgb(41, 45, 47);
+}
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.form{
+    color: white;
+    padding: 20px 15px;
+    background: linear-gradient(to right, #d0a368,#858585);
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 20px;
+}
+.form h4{
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+textarea,
+button{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: azure;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right,#e1cece,#c0b0b0,#f2dede);
+    color: black;
+}
+.errs{
+    color: rgb(101, 18, 18);
+    margin-top: 10px;
+    text-decoration: underline;
+}
+@media (max-width: 767px) {
+    header img{
+        width: 40px;
+        height: 40px;
+    }
+    .content{
+        width: 100%;
+    }
+    .containerx {
+        padding: 30px;
+    }
+    header h3{
+        font-size: 17px;
+    }
+}
+button{
+    background: #a3b5d9;
+    color: black;
+}
+.svg{
+    color: rgb(54, 99, 107);
+    margin-left: 3px;
+}
+.containerx {
+    position: relative;
+}
+.pop{
+    position: absolute;
+    top: -500px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 85%;
+    height: 70%;
+    background: linear-gradient(to right, #d0a368,#858585);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 9999;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.popx{
+    top: 50%;
+}
+.pop button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: fit-content;
+    font-size: 14px;
+    border: 1px solid seashell;
+    outline: none;
+    background: linear-gradient(to left, #d0a368,#858585);
+    color: white;
+    border-radius: 3px;
+}
+.imjs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #d0a368,#858585);
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 7px;
+}
+.imjs span{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #d0a368,#667188);
+    border-radius: 50%;
+}
